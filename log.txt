@@ -1,0 +1,151 @@
+8%) inuseSize:676480 peakSize:678976 [pid:0x39]
+<118>[SL] AppFocusChanged [NPXS20001] -> [AZIF00003]
+[Info ] src/ChainLauncher.c:22: Loading "/app0/guest.elf"
+<118>[SceLncService] tryLockSuspendBlock: appId={0x60000d0c}
+<118>[Syscore App] Kill for LoadExec(0x40)
+[KERNEL] dmem_handle_vmspace_exited pid: 64, ptype=1, 0xffffb7b407e1a018->pt_loaded is TRUE
+[KERNEL] dmem_handle_vmspace_exited map #0 0xffffb7b407e1a018
+[KERNEL] dmem_handle_vmspace_exited pid: 64, app_maps_count[1], 1 -> 0
+<118>[Syscore App] EVFILT_PROC NOTE_EXIT received : pid=0x40
+<118>[Syscore App] Kill for LoadExec(0x40) => 0
+<118>[Syscore App] process delete event : pid=0x40
+<118>[AppMgr Trace]: pid=0x40, deleted.
+<118>[Syscore App] Syscore Event Queue Push : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[AppMgr] All processes exited, ready for next spawn
+<118>[AppMgr] Executing next spawn
+<118>[Syscore App]  ExpandCpuSetMode : disable
+<118>[Syscore App] Syscore Event Queue Pop : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[Syscore App] processSpawn(pid, 0x60000d0c, 0x10d0c120, appParam, processParam, 1, 1, 1, param, debug, 1)
+<118>[Syscore App] appParam: appType = 0x1, rootPath = /mnt/sandbox/AZIF00003_000, titleId = AZIF00003
+<118>[Syscore App] processParam: elfPath = /app0/guest.elf, fullPath = /mnt/sandbox/pfsmnt/AZIF00003-app0-patch0-union/eboot.bin
+<118>[Syscore App] new pid=0x41[Syscore App] attributeExe= 0
+<118>[Syscore App] Ready to exec
+<118>[Syscore App] wait for NOTE_EXIT|NOTE_EXEC
+[KERNEL] dmem_start_app_process pid: 65, map=0xffffb7b407e19da0, app_maps_count[1], 0 -> 1
+<118>[Syscore App] Add event : pid=0x41
+<118>[SceLncService] unlockSuspendBlock: appId={0x60000d0c}
+mDBG: Process 65 untraced!
+<65> EXEC /app0/guest.elf [system], vm#0, dmem#0  <1737910 msec>
+<118>**** Base Mode ****
+[Debug] src/App.cpp:29: Initialize Language...
+[Debug] src/Language.cpp:203: Unable to open language file: /app0/assets/languages/22.json
+[Debug] src/Language.cpp:26: Failed to load language attempting to fallback to English (United States)
+[Debug] src/App.cpp:31: Initialize Controller...
+<118>[mbus] onNewClient. clientNum 10 over 8
+[Debug] src/App.cpp:33: Initialize Graphics...
+[Debug] src/Graphics.cpp:89: Handle is 1309737216 (0x4e110100)
+[Debug] src/Graphics.cpp:181: DirectMemOff: 0x200000
+[Debug] src/Graphics.cpp:182: DirectMemAllocationSize: 0xc000000
+[Debug] src/Graphics.cpp:183: alignment: 2097152 (0x00200000)
+[Debug] src/Graphics.cpp:188: VideoMem: 0x200200000
+[Debug] src/Graphics.cpp:109: Allocating framebuffer...
+[Debug] src/Graphics.cpp:237: handle: 1309737216 (0x4e110100)
+[Debug] src/Graphics.cpp:239: flipArgLog: 0x2000040e0
+[Debug] src/Graphics.cpp:240: FrameBuffers: 0x2000042c0
+[Debug] src/Graphics.cpp:255: sceVideoOutRegisterBuffers: 0x00000000
+[Debug] src/App.cpp:35: Initialize Resource...
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/Graphics.cpp:627: Loading PNG...
+[Debug] src/Graphics.cpp:637: PNG Loaded!
+[Debug] src/App.cpp:43: Initialize the Main View...
+[Debug] src/PayloadsView.cpp:186: GeneratePayloads is called!
+[Debug] src/PayloadsView.cpp:212: Cleanup payload list...
+[Debug] src/PayloadsView.cpp:206: GeneratePayloads: Refreshed
+[Debug] src/PayloadsView.cpp:252: PayloadsView: End of constructor
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [SplashScreen : SplashScreenScene] -> [AppScreen : ApplicationScreenScene]
+<118>[SceShellUI] I/PSM.UI :      Scene [AppScreen : ApplicationScreenScene] : Alive
+<118>SetDeviceIndexBehavior: mode=MergeAllConnectedDevice, param=null
+<118>[Theme/I] : Apply [ANONYMOUS] : [Option:101000]: with not preloaded user
+[Debug] src/App.cpp:119: Application: RUN
+<118>[SceShellUI] I/PSM.UI : [NoDraw] : ClearFrameBuffer=False
+[Debug] src/PayloadsView.cpp:319: Loading: /data/payloads/payload-1050-1gb-pro.bin
+[GoldHEN] <binloader> accepted a new payload
+[GoldHEN] <binloader> TCP Mode
+[Debug] src/PayloadsView.cpp:186: GeneratePayloads is called!
+[GoldHEN] <binloader> payload received [size: 28048 - buffer_size: 32768 - ip: 127.0.0.1]
+[Debug] src/PayloadsView.cpp:212: Cleanup payload list...
+[Debug] src/PayloadsView.cpp:206: GeneratePayloads: Refreshed
+[GoldHEN] <binloader> found and jailbroken target process [pid: 45]
+[GoldHEN] <binloader> launching payload... [format: ELF]
+[GoldHEN] <binloader> payload launched
+
+
+Fatal trap 12: page fault while in kernel mode
+<118>[SceShellUI] I/PSM.UI : [FirstClear] : ClearFrameBuffer=False
+<118>[SceShellUI] I/PSM.UI : [NoDraw] : ClearFrameBuffer=False
+<118>[SceShellUI] I/PSM.UI : [FirstClear] : ClearFrameBuffer=False
+<118>[SceShellUI] I/PSM.UI : [NoDraw] : ClearFrameBuffer=False
+[Debug] src/PayloadsView.cpp:319: Loading: /data/payloads/payload-1050-1gb-pro.bin
+[GoldHEN] <binloader> accepted a new payload
+[GoldHEN] <binloader> TCP Mode
+[Debug] src/PayloadsView.cpp:186: GeneratePayloads is called!
+[GoldHEN] <binloader> payload received [size: 28048 - buffer_size: 32768 - ip: 127.0.0.1]
+[Debug] src/PayloadsView.cpp:212: Cleanup payload list...
+[GoldHEN] <binloader> found and jailbroken target process [pid: 45]
+[Debug] src/PayloadsView.cpp:206: GeneratePayloads: Refreshed
+[GoldHEN] <binloader> launching payload... [format: ELF]
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 1 seconds
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 2 seconds
+<118>[SceShellCore] CPU Utilization: 0.14 0.77 0.01 0.00 0.01 0.00 0.99 0.99
+<118>[SceShellCore] CPU Top: timestamp 1754 to 1757 (3.0 sec)
+<118>[SceShellCore] 99% 1023 SceIdleCpu3
+<118>[SceShellCore] 99% 1023 SceIdleCpu4
+<118>[SceShellCore] 99% 1023 SceIdleCpu5
+<118>[SceShellCore] 99% 1023 SceIdleCpu2
+<118>[SceShellCore] 90%  700 AZIF00003 guest.elf
+<118>[SceShellCore] 86% 1023 SceIdleCpu0
+<118>[SceShellCore] 81%  700 NPXS21002 GoldHENLoader
+<118>[SceShellCore] 23% 1023 SceIdleCpu1
+<118>[SceShellCore] 11%  297 NPXS20973 SceAoutWriteAll
+<118>[SceShellCore]  1% 1023 SceIdleCpu6
+<118>[SceShellCore]  1% 1023 SceIdleCpu7
+<118>[SceShellCore]  1%  660 NPXS20001 SceStrawIPCSender
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 3 seconds
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 4 seconds
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 5 seconds
+<118>[SceShellCore] Main thread has frozen in sceKernelUsleep(100 * 1000) for 10 seconds
+<118>[SceShellCore] CPU Utilization: 0.03 0.89 0.01 0.00 0.01 0.00 0.99 0.99
+<118>[SceShellCore] CPU Top: timestamp 1766 to 1769 (3.0 sec)
+<118>[SceShellCore] 99% 1023 SceIdleCpu2
+<118>[SceShellCore] 99% 1023 SceIdleCpu3
+<118>[SceShellCore] 99% 1023 SceIdleCpu4
+<118>[SceShellCore] 99% 1023 SceIdleCpu5
+<118>[SceShellCore] 99%  510 NPXS21010 bin_loader_payload_thread
+<118>[SceShellCore] 97% 1023 SceIdleCpu0
+<118>[SceShellCore] 90%  700 AZIF00003 guest.elf
+<118>[SceShellCore] 82%  700 NPXS21002 GoldHENLoader
+<118>[SceShellCore] 11% 1023 SceIdleCpu1
+<118>[SceShellCore] 10%  297 NPXS20973 SceAoutWriteAll
+[Debug] src/PayloadsView.cpp:319: Loading: /data/payloads/payload-1050-1gb-pro.bin
+[GoldHEN] <binloader> accepted a new payload
+[Debug] src/PayloadsView.cpp:186: GeneratePayloads is called!
+[Debug] src/PayloadsView.cpp:212: Cleanup payload list...
+[Debug] src/PayloadsView.cpp:206: GeneratePayloads: Refreshed
+[GoldHEN] <binloader> TCP Mode
+[GoldHEN] <binloader> payload received [size: 28048 - buffer_size: 32768 - ip: 127.0.0.1]
+[GoldHEN] <binloader> found and jailbroken target process [pid: 45]
+[GoldHEN] <binloader> launching payload... [format: ELF]
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 4946msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 2015msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 24988msec
+ugen0.5: <rockchip, rk3xxx, 5a6cc21e523a9757> at usbus0 (disconnected)
+ugen0.5: <rockchip, rk3xxx, 5a6cc21e523a9757>(VID=0x2207 PID=0x0019 depth=1 port=1 speed=3) at usbus0
+ugen0.5: <rockchip, rk3xxx, 5a6cc21e523a9757> at usbus0 (disconnected)
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 32000msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 91997msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 22860msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 43140msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 31000msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 31000msec
+<118>[ScePsP:InputCtrl] LOST PAD DATA: 7000msec
